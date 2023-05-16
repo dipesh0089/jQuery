@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01 jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+
+    <!-- 
+        jQuery: Javascript framework
+
+        Framework: write less do more
+
+
+        $('selector').method();
+
+
+        $("tagname")
+        $("#idname")
+        $(".classname")
+
+        <h1 id="g" class="g"></h1>
+
+        ocument.getElementById('g')
+        
+        document.QuerySelector('#g')
+
+        document.QuerySelector('.g')
+
+        $("h1")
+        $("#idname")
+        $(".classname")
+
+
+     -->
+
+     <h1 id="g" class="g">
+         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores deserunt dolore officiis, ratione culpa nesciunt eius. Quas suscipit cum laudantium repellendus, ipsum ab unde laboriosam. Aut asperiores fugiat harum reiciendis.
+     </h1>
+
+     <button id="b1">hide</button>
+
+     <button id="b2">show</button>
+
+     <button class="b3">hideshow</button>
+
+
+
+     <script>
+
+         $(document).ready(function(){
+             
+            console.log( $('#g'));
+            console.log( $('.g'));
+            console.log( $('h1'));
+
+         $('#b1').mouseover(function(){
+             $('#g').hide(1000);
+         })
+
+
+         $('#b2').click(function(){
+             $('.g').show(1000);
+         })
+
+
+         $('.b3').click(()=>{
+            $('.g').toggle(1000); 
+         })
+
+
+         $('h1').click(()=>{
+             $('h1').hide(1000);
+         })
+         
+
+         $('h1').click(function(){
+             $(this).hide();
+         })
+
+
+         })
+
+
+     </script>
+
+    
+    
+</body>
+</html>

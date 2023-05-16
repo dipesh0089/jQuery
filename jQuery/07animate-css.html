@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07 animate-css</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+
+    <style>
+        div
+        {
+            height: 300px;
+            width: 400px;
+            background: skyblue;
+            color: red;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="b1">
+        animate me
+    </button>
+
+    <button id="b2">
+        css
+    </button>
+
+    <div>
+        hello animate
+    </div>
+
+    <script>
+        // $('div').css("left","200px");
+
+        
+       
+
+        $('#b2').click(function(){
+            // $('div').css("left","200px");
+            $('div').css({"left":"200px"});
+
+        })
+
+        $('#b1').click(()=>{
+            $('div').animate({"left":"200px"});
+            // $('div').animate("left","200px");
+        })
+
+    </script>
+    
+</body>
+</html>

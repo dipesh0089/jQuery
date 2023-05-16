@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03 slide</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <style>
+
+        .q,.ans
+        {
+            background: lightblue;
+            border: 2px solid;
+        }
+        .ans 
+        {
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="q">Question ?</div>
+    <div class="ans">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ducimus ad error. Ipsum natus quibusdam in, ad odit, velit nisi quas obcaecati, vero minima quaerat neque itaque atque porro suscipit.</div>
+
+
+    <script>
+
+        $('.q').click(()=>{
+            $('.ans').slideUp(1000);
+        })
+
+
+        $('.q').click(()=>{
+            $('.ans').slideDown();
+        })
+
+
+        // $('.q').click(()=>{
+        //     $('.ans').slideToggle();
+        // })
+
+
+
+    </script>
+    
+</body>
+</html>
