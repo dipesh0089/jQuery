@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13 filtering</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <!-- <style>
+
+        h2:nth-child(1)
+        {
+            background: cadetblue;
+        }
+    </style> -->
+
+</head>
+<body>
+
+    <div>
+        <h2>hello..!</h2>
+        <h2>hello..!</h2>
+        <h2>hello..!</h2>
+        <h2>hello..!</h2>
+        <h2>hello..!</h2>
+    </div>
+
+    <script>
+
+        $('h2').first().css("background","lightblue");
+
+        $('h2').last().css("background","cadetblue");
+
+        $('h2').eq(3).css("background","coral") //eq index parkam kare
+
+        
+    </script>
+
+</body>
+</html>

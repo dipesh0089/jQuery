@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11 traversing</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <style>
+        .main *
+        {
+            border: 2px solid blueviolet;
+            padding: 25px;
+            display: block;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="main">
+        <div class="go">
+            grand parents
+            <ul>
+                ul
+                <li>
+                    li
+                    <span>SPAN</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="go">
+            grand parents
+            <ul>
+                ul
+                <li>
+                    li
+                    <span>SPAN</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="go">
+            grand parents
+            <ul>
+                ul
+                <li>
+                    li
+                    <span>SPAN</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+
+        // $('span').parents().css("border","2px solid gray");
+        $('span').parentsUntil('.main').css('border','2px solid red');
+        $('span').parent().css("border","2px solid green");
+        $('.go').children().css("background","lightgray");
+        $('.go').find('ul').css("background","coral");
+        $('.go').find('li').css("background","blue");
+        $('.go').find('span').css("background","pink");
+
+        
+    </script>
+    
+</body>
+</html>
